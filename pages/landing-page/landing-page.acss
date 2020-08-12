@@ -1,0 +1,117 @@
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.expand-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 30rpx;
+  align-self: center;
+}
+
+.top-up-view {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  width: 220rpx;
+  height: 50rpx;
+  background: none;
+  color: #FFF;
+  box-sizing: border-box;
+  border: 2px solid rgb(14, 255, 214);
+  border-radius: 100rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.top-view {
+  height: 140px;
+  align-items: center;
+  background: #e60000;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+.wallet-comp {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50rpx;
+  margin-left: 30rpx;
+  justify-content: space-between;
+}
+
+.wallet-view {
+  display: flex;
+  flex-direction: row;
+}
+
+.currency {
+  color: #ffff;
+}
+
+.currency-label {
+  font-size: 12pt;
+  color: #ffff;
+}
+
+.top-up-label {
+  padding: 10rpx;
+  font-size: 10pt;
+  align-self: center;
+  text-align: center;
+  color: #ffff;
+}
+
+.price-label {
+  font-size: 22pt;
+  color: #ffff;
+}
+
+.floating-view {
+  height: 12%;
+  margin-left: 8%;
+  margin-right: 8%;
+  position: relative;
+  margin-top: -15%;
+  background: white;
+  border-radius: 20rpx;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+.floating-view-comp{
+  display: flex;
+  flex-direction: column;
+}
+
+.floating-view-icon {
+  width: 40px;
+  height: 40px;
+  align-self: center;
+}
+.floating-comp-label{
+  padding: 10rpx;
+  font-size: 10pt;
+  align-self: center;
+  text-align: center;
+  color: grey;
+}
+.header-title{
+  color:grey;
+  font-size: 18pt;
+  font-weight: 900;
+}
+.header{
+  padding: 30rpx;
+}

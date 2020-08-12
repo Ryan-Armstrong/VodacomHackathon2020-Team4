@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "grid": "mini-antui/es/grid/index",
+    "options": "../../components/options/options"
+  },
+    "titleBarColor":"#e60000",
+    "titleImage":"../../assets/vodacom.png",
+    "defaultTitle":"Airtime advance",
+    "left":{}
+}

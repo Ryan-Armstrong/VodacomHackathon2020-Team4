@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "grid": "mini-antui/es/grid/index"
+  },
+  "window": {
+    "titleBarColor":"#eb4034"
+  }
+}

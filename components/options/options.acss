@@ -1,0 +1,92 @@
+.nav-outer-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.selected-view{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid rgb(14, 255, 214);
+}
+.title-view{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.title{
+  margin-left: 20px;
+  font-size: 18sp;
+  color: #000000;
+}
+.number{
+  display: flex;
+  text-align: center;
+  background:#e60000;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  height: 36px;
+  width: 36px;
+  border-radius: 100%;
+}
+.sub-item{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  flex-direction: row;
+}
+.item{
+  flex: 0.5;
+}
+.item-comp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  height: 45px;
+  width: 45px;
+}
+.tick-icon{
+  height: 30px;
+  width: 30px;
+}
+.item-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  background: #cccccc;
+}
+.item-title{
+  margin-top: 10px;
+  color: #333333;
+  font-size: 16.6sp;
+  text-align: center;
+  line-height: 20.4sp;
+}
+.main-title{
+  font-size: 14sp;
+  margin-left: 20px;
+}
+.sub-title{
+  margin-left: 20px;
+  font-size: 14sp;
+  color: #84a9ac;
+  line-height: 20sp;
+}
+.last-part-view{
+  justify-content: center;
+  align-items: center;
+}
+.last-part-title{
+  align-self: flex-end;
+  color: #84a9ac;
+}

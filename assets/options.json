@@ -1,0 +1,341 @@
+[
+  {
+    "index": 0,
+    "level": 1,
+    "title": "What would you like?",
+    "items": [
+      {
+        "title": "Airtime",
+        "next": 1
+      },
+      {
+        "title": "Data",
+        "next": 2
+      }
+    ]
+  },
+  {
+    "index": 1,
+    "level": 2,
+    "title": "How much airtime?",
+    "items": [
+      {
+        "title": "R5",
+        "next": 3
+      },
+      {
+        "title": "R10",
+        "next": 4
+      },
+      {
+        "title": "R15",
+        "next": 5
+      },
+      {
+        "title": "R20",
+        "next": 6
+      },
+      {
+        "title": "R75",
+        "next": 7
+      }
+    ]
+  },
+  {
+    "index": 2,
+    "level": 2,
+    "title": "Bundle type?",
+    "items": [
+      {
+        "title": "Once-off",
+        "next": 9
+      },
+      {
+        "title": "Monthly Recurring",
+        "next": 11
+      }
+    ]
+  },
+  {
+    "index": 3,
+    "level": 3,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price":5.00,
+      "subtitle": "Airtime Advance",
+      "serviceFee": 1.00
+    },
+    "items": []
+  },
+  {
+    "index": 4,
+    "level": 3,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price":10.00,
+      "subtitle": "Airtime Advance",
+      "serviceFee": 1.00
+    },
+    "items": []
+  },
+  {
+    "index": 5,
+    "level": 3,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price": 15.00,
+      "subtitle": "Airtime Advance",
+      "serviceFee": 1
+    },
+    "items": []
+  },
+  {
+    "index": 6,
+    "level": 3,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price": 20.00,
+      "subtitle": "Airtime Advance",
+      "serviceFee": 1
+    },
+    "items": []
+  },
+  {
+    "index": 7,
+    "level": 3,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price": 75.00,
+      "subtitle": "Airtime Advance",
+      "serviceFee": 1.00
+    },
+    "items": []
+  },
+  {
+    "index": 8,
+    "level": 3,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price": 75.00,
+      "subtitle": "Airtime Advance",
+      "serviceFee": 1.00
+    },
+    "items": []
+  },
+  {
+    "index": 9,
+    "level": 3,
+    "title": "How much airtime?",
+    "items": [
+      {
+        "title": "1 hour",
+        "next": 10
+      },
+      {
+        "title": "Until midnight",
+        "next": 11
+      },
+      {
+        "title": "30 days",
+        "next": 12
+      }
+    ]
+  },
+  {
+    "index": 10,
+    "level": 4,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price": 12.00,
+      "subtitle": "1GB for an hour",
+      "serviceFee": 1.00
+    },
+    "items": []
+  },
+  {
+    "index": 11,
+    "level": 4,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price": 29.00,
+      "subtitle": "1GB untill midnight",
+      "serviceFee": 1.00
+    },
+    "items": []
+  },
+  {
+    "index": 12,
+    "level": 3,
+    "title": "Bundle size?",
+    "items": [
+      {
+        "title": "25 MB + 25 MB free for R9",
+        "next": 13
+      },
+      {
+        "title": "50 MB for R12",
+        "next": 14
+      },
+      {
+        "title": "150 MB for R29",
+        "next": 15
+      },
+       {
+        "title": "325 MB for R55",
+        "next": 16
+      },
+       {
+        "title": "500 MB for R79",
+        "next": 17
+      },
+       {
+        "title": "1 GB for R99",
+        "next": 18
+      },
+      {
+        "title": "5 GB for R229",
+        "next": 19
+      },
+      {
+        "title": "5 GB for R349",
+        "next": 20
+      },
+      {
+        "title": "10 GB for R469",
+        "next": 21
+      },
+      {
+        "title": "20 GB for R699",
+        "next": 22
+      }
+    ]
+  },
+   {
+    "index": 13,
+    "level": 4,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price": 9.00,
+      "subtitle": "25 MB + 25 MB free for 30 days",
+      "serviceFee": 1.00
+    },
+    "items": []
+  },
+   {
+    "index": 14,
+    "level": 4,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price": 12.00,
+      "subtitle": "50 MB for 30 days",
+      "serviceFee": 1.00
+    },
+    "items": []
+  },
+   {
+    "index": 15,
+    "level": 4,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price": 12.00,
+      "subtitle": "150 MB for 30 days",
+      "serviceFee": 1.00
+    },
+    "items": []
+  },
+   {
+    "index": 16,
+    "level": 4,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price": 55.00,
+      "subtitle": "325 MB for 30 days",
+      "serviceFee": 1.00
+    },
+    "items": []
+  },
+   {
+    "index": 17,
+    "level": 4,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price": 79.00,
+      "subtitle": "500 MB for 30 days",
+      "serviceFee": 1.00
+    },
+    "items": []
+  },
+   {
+    "index": 18,
+    "level": 4,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price": 99.00,
+      "subtitle": "1 GB for 30 days",
+      "serviceFee": 1.00
+    },
+    "items": []
+  },
+   {
+    "index": 19,
+    "level": 4,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price": 229.00,
+      "subtitle": "5 GB for 30 days",
+      "serviceFee": 1.00
+    },
+    "items": []
+  },
+   {
+    "index": 20,
+    "level": 4,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price": 349.00,
+      "subtitle": "5 GB for 30 days",
+      "serviceFee": 1.00
+    },
+    "items": []
+  },
+  {
+    "index": 21,
+    "level": 4,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price": 469.00,
+      "subtitle": "10 GB for 30 days",
+      "serviceFee": 1.00
+    },
+    "items": []
+  },
+  {
+    "index": 22,
+    "level": 4,
+    "end": true,
+    "title": "Advance summary",
+    "content": {
+      "price": 699.00,
+      "subtitle": "20 GB for 30 days",
+      "serviceFee": 1.00
+    },
+    "items": []
+  },
+]

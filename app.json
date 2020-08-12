@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/landing-page/landing-page",
+    "pages/buy-page/buy-page",
+    "pages/details-page/details-page"
+
+  ],
+  "window": {
+    "titleBarColor":"#e60000"
+  }
+}
