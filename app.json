@@ -1,6 +1,10 @@
 {
   "pages": [
-   
+     "pages/landing-page/landing-page",
+    "pages/selection-page/selection-page",
+    "pages/details-page/details-page",
+    "pages/advance-history-page/advance-history-page",
+    "pages/outstanding-balance-page/outstanding-balance-page",
     "pages/success-page/success-page"
   ],
   "window": {
