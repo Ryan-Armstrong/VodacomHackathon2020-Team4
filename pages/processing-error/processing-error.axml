@@ -1,6 +1,6 @@
 <view class="error-page">
 
-<image class="error-icon" src="{{'../../assets/error.png'}}" mode="scaleToFill"background-size="cover"></image>
+<image class="error-icon" src="{{'../../assets/images/error.png'}}" mode="scaleToFill"background-size="cover"></image>
 
 <view class="error-label-title">
        <text class="succeess-label">Oops...</text>
