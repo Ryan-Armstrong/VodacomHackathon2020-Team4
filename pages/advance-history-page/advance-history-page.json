@@ -9,7 +9,5 @@
     "list-item": "mini-antui/es/list/list-item/index"
   },
     "titleBarColor":"#e60000",
-    "titleImage":"../../assets/images/vodacom.png",
-    "defaultTitle":"Advance history",
-    "left":{}
+    "defaultTitle":"Advance history"
 }

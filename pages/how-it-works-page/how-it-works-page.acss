@@ -1,0 +1,22 @@
+.howitworks-title-text {
+  color: #4a4a4a;
+  font-size: 27sp;
+}
+
+.howitworks-title-content {
+  font-size: 16sp;
+  color: #333333;
+  line-height: 20sp;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-justify: inter-word;
+}
+
+.howitworks-title {
+  font-size: 16sp;
+  line-height: 20sp;
+  text-align: justify;
+  color: #333333;
+  text-justify: inter-word;
+}

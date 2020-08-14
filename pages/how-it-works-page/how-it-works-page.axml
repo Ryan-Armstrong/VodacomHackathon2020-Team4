@@ -1,0 +1,39 @@
+<view class="page" style="justify-content: center;align-content: center;">
+  <view class="center-content" style="margin-top:10%;">
+    <image mode="scaleToFill" class="center-icon" src="{{'../../assets/images/info-outline.png'}}" background-size="cover"></image>
+  </view>
+  <view class="center-content" style="margin-top:10%;">
+    <text class="howitworks-title-text">How it works</text>
+  </view>
+  <view class="center-content" style="margin-top:10%;">
+    <text class="howitworks-title-content">Take an airtime or data advance
+when you need it most and pay the next time
+you recharge.
+    </text>
+  </view>
+  <view class="center-content" style="margin-top:5%;">
+    <text class="howitworks-title" style="font-weight:bold;">Use this service if:</text>
+  </view>
+  <view class="table-content">
+    <view class="table-cell">
+      <view class="table-label">
+        <view class="dot" style="width:8px;height:8px;border-radius:8px;margin-top:5px;"/>
+      </view>
+      <view class="table-value" style="margin-left:10px;">
+        <text class="howitworks-title">Youv’e been active on the Vodacom network for the last 3 months</text>
+      </view>
+    </view>
+    <view class="center-content" style="margin-top:5%;"><text class="howitworks-title">OR</text></view>
+    <view class="table-cell">
+      <view class="table-label">
+        <view class="dot" style="width:8px;height:8px;border-radius:8px;margin-top:5px;"/>
+      </view>
+      <view class="table-value" style="margin-left:10px;">
+        <text class="howitworks-title">You’ve recharged with a total of R29 per month over the last 3 months.</text>
+      </view>
+    </view>
+   <view class="center-content" style="margin-top:20%;">
+    <custom-button text="Take an advance" onClickMe="takeAdvance"></custom-button>
+  </view>
+  </view>
+</view>

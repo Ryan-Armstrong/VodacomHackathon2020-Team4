@@ -61,9 +61,13 @@ require('../../node_modules/mini-antui/es/list/index?hash=05d2a9730dd6009bf94461
 require('../../node_modules/mini-antui/es/list/list-item/index?hash=05d2a9730dd6009bf9446182f9c985f40f8c0f43');
 require('../../components/options/options?hash=05d2a9730dd6009bf9446182f9c985f40f8c0f43');
 require('../../node_modules/mini-antui/es/footer/index?hash=05d2a9730dd6009bf9446182f9c985f40f8c0f43');
+require('../../components/history-line-item/history-line-item?hash=05d2a9730dd6009bf9446182f9c985f40f8c0f43');
 require('../../pages/landing-page/landing-page?hash=b449417de28a88425372e8a40318501ce3757174');
 require('../../pages/selection-page/selection-page?hash=ec6de8d7214f13c35d6f95578c9f0d214e1e6b23');
 require('../../pages/details-page/details-page?hash=e6e658efd6f1f8459cd0277fa8a25e19941848b1');
+require('../../pages/advance-history-page/advance-history-page?hash=3a87ace8b6fbf631d7d775cd5dff1d8f6d1e32f0');
+require('../../pages/outstanding-balance-page/outstanding-balance-page?hash=710b7a966270cfbd78d932592766ce31ce208f98');
+require('../../pages/how-it-works-page/how-it-works-page?hash=36b405fc5fc9438aaa3dc0b0d313f51a2f778225');
 }
 self.bootstrapApp ? self.bootstrapApp({ success }) : success();
 }

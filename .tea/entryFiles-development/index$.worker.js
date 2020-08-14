@@ -48,6 +48,7 @@ require('../../pages/selection-page/selection-page?hash=ec6de8d7214f13c35d6f9557
 require('../../pages/details-page/details-page?hash=e6e658efd6f1f8459cd0277fa8a25e19941848b1');
 require('../../pages/advance-history-page/advance-history-page?hash=3a87ace8b6fbf631d7d775cd5dff1d8f6d1e32f0');
 require('../../pages/outstanding-balance-page/outstanding-balance-page?hash=710b7a966270cfbd78d932592766ce31ce208f98');
+require('../../pages/how-it-works-page/how-it-works-page?hash=36b405fc5fc9438aaa3dc0b0d313f51a2f778225');
 }
 self.bootstrapApp ? self.bootstrapApp({ success }) : success();
 }

@@ -4,9 +4,12 @@
     "pages/selection-page/selection-page",
     "pages/details-page/details-page",
     "pages/advance-history-page/advance-history-page",
-    "pages/outstanding-balance-page/outstanding-balance-page"
+    "pages/outstanding-balance-page/outstanding-balance-page",
+    "pages/how-it-works-page/how-it-works-page"
   ],
   "window": {
-    "titleBarColor": "#e60000"
+    "titleBarColor": "#e60000",
+    "enableWK": "YES",
+    "enableDSL": true
   }
 }
