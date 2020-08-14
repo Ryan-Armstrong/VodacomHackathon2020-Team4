@@ -17,4 +17,5 @@
     </view>
     <text class="table-footer">Payable the next time you recharge</text>
   </view>
+  <text class="table-footer">Advance amount left:R75</text>
 </view>
