@@ -1,13 +1,14 @@
 {
   "pages": [
+    
    "pages/landing-page/landing-page",
     "pages/selection-page/selection-page",
     "pages/details-page/details-page",
     "pages/advance-history-page/advance-history-page",
     "pages/outstanding-balance-page/outstanding-balance-page",
     "pages/how-it-works-page/how-it-works-page",
-    "pages/success-page/success-page",
-    "pages/processing-error/processing-error"
+    "pages/processing-error/processing-error",
+    "pages/success-page/success-page"
   ],
   "window": {
     "titleBarColor": "#e60000",
