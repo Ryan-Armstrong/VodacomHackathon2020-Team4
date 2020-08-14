@@ -1,0 +1,83 @@
+.error-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+.error-label
+{
+  color:black;
+  font-size: 27px;
+  height:31.5px;
+}
+
+.error-icon
+{
+  width: 83.2px;
+  height: 83.2px;
+  align-self: center;
+   color: red;
+    
+
+
+}
+
+.error-label-title
+{
+
+   align-self: center;
+   text-align: center;
+   margin-top: 56px;
+
+
+
+}
+.message{
+  
+    color:black;
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 56px;
+    padding-top: 32.5px;
+    font: VodafoneLt-Regular;
+    width:287px;
+    height:65px;
+
+
+}
+.buttons{
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  display:flex;
+ 
+  flex-direction: row;
+  height:44px;
+
+
+
+}
+.button1{
+    color: #333333;
+    background-color: #ffffff;
+    border:1px solid #333333;
+    border-radius: 6px;
+    width: 158px;
+
+
+
+}
+.button2{
+    background-color: #e60000;
+    color: white;
+    border-radius: 6px;
+                    width: 158px;
+
+
+
+     
+}
