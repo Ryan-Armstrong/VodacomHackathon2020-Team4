@@ -1,0 +1,19 @@
+<view class="error-page">
+
+<image class="error-icon" src="{{'../../assets/error.png'}}" mode="scaleToFill"background-size="cover"></image>
+
+<view class="error-label-title">
+       <text class="succeess-label">Oops...</text>
+  </view>
+
+  <view class="message">
+    <text class="message">Something went wrong and we could not process your request. Please try again later..</text>
+  </view>
+     <view class="buttons">
+
+   <button class="button1">Cancel</button>  <button class="button2">Okay</button>   
+
+     </view>
+
+  
+    </view>
