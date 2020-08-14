@@ -1,0 +1,25 @@
+<view class="page">
+  <view class="tab-comp">
+    <tabs tabs="{{tabs}}" className="tab" activeCls="activeTab" tabBarUnderlineColor="#e90707" showPlus="{{false}}" onTabClick="handleTabClick" onChange="handleTabChange" onPlusClick="handlePlusClick" activeTab="{{activeTab}}">
+      <block a:for="{{tabs}}">
+        <tab-content key="{{index}}">
+          <view class="list">
+            <view a:for="{{history}}" a:for-item="itemName">
+              <history-line-item purchased="{{itemName.title}}" date="{{'23 Aug 2018, 06:08 AM'}}" fee="{{itemName.fee}}" totalRepayment="{{itemName.totalRepayment}}"/>
+              <view class="divider"/>
+            </view>
+          </view>
+        </tab-content>
+      </block>
+    </tabs>
+  </view>
+  <view class="button-parent-view">
+    <custom-button style="margin:10px;" outline="{{true}}" text="Load more" onClickMe="loadMore"></custom-button>
+  </view>
+  <view>
+    <view class="divider"/>
+  </view>
+  <view class="button-parent-view">
+    <custom-button style="margin:10px;" text="Outstanding balances" onClickMe="outstanding"></custom-button>
+  </view>
+</view>

@@ -2,34 +2,34 @@ Page({
   data: {
     services: [{
       text: 'Airtime Advance',
-      icon: "../../assets/airtime.png",
+      icon: "../../assets/images/airtime.png",
     }, {
       text: 'Vodabucks',
-      icon: "../../assets/vodacom.png"
+      icon: "../../assets/images/vodacom.png"
     },
     {
       text: 'takealot',
-      icon: "../../assets/takealot.png"
+      icon: "../../assets/images/takealot.png"
     },
     {
       text: 'Win a Pozi',
-      icon: "../../assets/pozi.png"
+      icon: "../../assets/images/pozi.png"
     },
     {
       text: 'Electricity',
-      icon: "../../assets/electricity.png"
+      icon: "../../assets/images/electricity.png"
     }, {
       text: 'Bills',
-      icon: "../../assets/bills.png"
+      icon: "../../assets/images/bills.png"
     }
       ,
     {
       text: 'Tickets',
-      icon: "../../assets/tickets.png"
+      icon: "../../assets/images/tickets.png"
     },
     {
       text: 'Micro-Invest',
-      icon: "../../assets/invest.png"
+      icon: "../../assets/images/invest.png"
     }],
   },
   onLoad(query) {
@@ -41,7 +41,7 @@ Page({
     let item = this.data.services[index];
     if (item.text === "Airtime Advance") {
       my.navigateTo({
-        url: '../buy-page/buy-page',
+        url: '../selection-page/selection-page',
       });
     } else {
       my.alert({

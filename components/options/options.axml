@@ -2,26 +2,12 @@
   <view a:if="{{added.length >0}}" class="list-view">
     <view a:for="{{added}}">
       <view class="selected-view">
-        <view class="number">
-          <image mode="scaleToFill" class="tick-icon" src="{{'../../assets/accept.png'}}" background-size="cover"></image>
-        </view>
-        <view style="display:flex;flex-direction:column;flex:1;">
-          <text class="main-title">{{item.parent.title}}</text>
-          <text class="sub-title">{{item.item.title}}</text>
-        </view>
-        <view class="last-part-view" id="{{{data:item,index:index}}}" onTap="onEditClicked">
-          <text class="last-part-title">{{"EDIT"}}</text>
-        </view>
+      <!-- <rounded-line-item title="{{item.parent.title}}" subtitle="{{item.item.title}}" value="{{optionData[currentIndex].level}}" icon="accept.png" /> -->
       </view>
     </view>
   </view>
   <view class="page-description">
-    <view class="title-view">
-      <view class="number">
-      {{optionData[currentIndex].level}}
-      </view>
-      <text class="title">{{optionData[currentIndex].title}}</text>
-    </view>
+    <!-- <rounded-line-item title="{{optionData[currentIndex].title}}" value="{{optionData[currentIndex].level}}"  /> -->
   </view>
   <view style="display:flex;flex-direction:row;margin-left:30px;">
     <view a:for="{{optionData[currentIndex].items}}">
@@ -29,7 +15,7 @@
         <view class="item">
           <view class="item-comp">
             <view class="item-icon">
-              <image mode="scaleToFill" class="icon" src="{{'../../assets/expand-arrow.png'}}" background-size="cover"></image>
+              <image mode="scaleToFill" class="icon" src="{{'../../assets/images/expand-arrow.png'}}" background-size="cover"></image>
             </view>
             <text class="item-title">{{item.title}}</text>
           </view>

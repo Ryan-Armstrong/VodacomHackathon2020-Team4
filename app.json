@@ -1,11 +1,12 @@
 {
   "pages": [
     "pages/landing-page/landing-page",
-    "pages/buy-page/buy-page",
-    "pages/details-page/details-page"
-
+    "pages/selection-page/selection-page",
+    "pages/details-page/details-page",
+    "pages/advance-history-page/advance-history-page",
+    "pages/outstanding-balance-page/outstanding-balance-page"
   ],
   "window": {
-    "titleBarColor":"#e60000"
+    "titleBarColor": "#e60000"
   }
 }

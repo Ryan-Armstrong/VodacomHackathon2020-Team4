@@ -1,0 +1,10 @@
+<view class="history-view">
+    <view class="history-line-one-view">
+        <text class="history-left-text">{{purchased}}</text>
+        <text class="history-detail-text">{{date}}</text>
+    </view>
+    <view class="history-view-others">
+        <text class="history-left-text">Access fee: R{{fee}}</text>
+        <text class="history-left-text" style="margin-top:5px;">Access fee: R{{totalRepayment}}</text>
+    </view>
+</view>

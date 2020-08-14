@@ -3,31 +3,30 @@ Page({
   data: {
     title: "Airtime advance",
     option: [],
-    totalRepayment:0
+    totalRepayment: 0
   },
   onLoad() {
-    let totalRepayment = Number(app.selectedOption.content.price)+Number(app.selectedOption.content.serviceFee);
+    console.log(app.selectedOption);
+    let totalRepayment = Number(app.selectedOption.price) + Number(app.selectedOption.fee);
     this.setData({
-      option:app.selectedOption,
-      totalRepayment:totalRepayment
+      option: app.selectedOption,
+      totalRepayment: totalRepayment
     })
   },
-  confirm(){
-    console.log(this.data.totalRepayment);
-    console.log(this.data.option);
+  confirm() {
     my.request({
       url: 'http://localhost:9001/api/hackton/submit',
       method: 'POST',
-      data: {totalRepayment:this.data.totalRepayment,option:this.data.option},
+      data: { totalRepayment: this.data.totalRepayment, option: this.data.option },
       timeout: 30000,
       success: (result) => {
-        
+
       },
       fail: () => {
-        
+
       },
       complete: () => {
-        
+
       }
     });
   },

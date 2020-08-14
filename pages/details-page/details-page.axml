@@ -1,26 +1,32 @@
-<view class="page">
+<view class="page-details">
   <view class="title-view">
-    <text class="title">{{option.title}}</text>
+    <text class="title">Summary</text>
   </view>
   <view class="content-view">
-    <text class="content-main">R{{option.content.price}}</text>
-    <text class="content-submain">{{option.content.subtitle}}</text>
+    <text class="content-main">{{option.title}}</text>
   </view>
-  <view class="divider"/>
-  <view class="details">
-    <view class="more-info" style="margin-top:20px;">
-      <text class="more-infor-title">{{"Service fee"}}</text>
-      <text class="more-infor-value">R{{option.content.serviceFee}}</text>
+  <view style="margin-top:20px;margin-bottom:20px;">
+    <view class="divider"/>
+  </view>
+  <view class="table-content">
+    <view class="table-cell" style="margin-top:20px;">
+      <text class="table-cell-label">{{"Access fee:"}}</text>
+      <text class="table-cell-value" style="font-weight:normal;">R{{option.fee}}</text>
     </view>
-    <view class="more-info">
-      <text class="more-infor-title">{{"Total repyment"}}</text>
-      <text class="more-infor-value">R{{totalRepayment}}</text>
+    <view class="table-cell">
+      <text class="table-cell-label" style="font-weight:bold;">{{"Total repyment"}}</text>
+      <text class="table-cell-value" style="font-weight:bold;">R{{totalRepayment}}</text>
     </view>
+    <text class="table-footer">Payable the next time you recharge</text>
   </view>
-  <view class="terms-view">
-    <text class="terms">By confirming you accept the terms and conditions.</text>
-  </view>
-  <view class="confirm-view">
-    <custom-button class="next" text="Confirm" onClickMe="confirm"></custom-button>
+  <view class="footer">
+    <view class="terms-view">
+      <text class="terms">By selecting ‘Confirm’ you agree to the</text>
+      <text class="terms-link">terms and conditions
+      </text>
+    </view>
+    <view class="confirm-view">
+      <custom-button class="next" text="Confirm" onClickMe="confirm"></custom-button>
+    </view>
   </view>
 </view>

@@ -26,7 +26,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
+.vodapayIcon{
+  height: 25px;
+  width: 80px;
+}
 .top-view {
   height: 140px;
   align-items: center;
@@ -34,12 +37,18 @@
   border-bottom-left-radius: 100%;
   border-bottom-right-radius: 100%;
 }
+.wallet-comp-parent{
+  display: flex;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  flex-direction: column;
+  margin-bottom: 50rpx;
 
+}
 .wallet-comp {
   display: flex;
+  margin-top: 10rpx;
   flex-direction: row;
-  margin-top: 50rpx;
-  margin-left: 30rpx;
   justify-content: space-between;
 }
 

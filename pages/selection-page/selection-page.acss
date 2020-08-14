@@ -1,0 +1,103 @@
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.list{
+  height: 400px;
+  overflow: auto;
+}
+.tab-comp {
+  margin-top: 20px;
+}
+
+.airtimeTab {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  background: #e60000;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.dataTab {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  background: #e60000;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.tab-content {
+  background: #e60000;
+  margin: 20px;
+}
+
+.list-item {
+  display: flex;
+  flex: 1;
+}
+.list-item-text {
+  display: flex;
+  width:100%;
+  color: #4a4a4a;
+  font-size: 11pt;
+}
+.line{
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  flex:1;
+  display: flex;
+  flex-direction: row;
+}
+.line-item-icon-view {
+  margin: 10px;
+  border-radius: 100%;
+  background: #cccccc;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-item-icon {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  align-self: center;
+}
+
+.line-item-extra {
+  width: 30px;
+  height: 30px;
+}
+
+.line-item-view {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-top: 8px;
+}
+
+.line-item-text-view {
+  margin-left: 5px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.history-view{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

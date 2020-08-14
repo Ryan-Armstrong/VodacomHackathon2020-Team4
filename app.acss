@@ -1,10 +1,120 @@
-.container {
-  background: black;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+ .page {
+   flex: 1;
+   display: flex;
+   max-height: 100hv;
+   flex-direction: column;
+   font-family: "pingFang SC" "pingFang";
+ }
+
+ .container {
+   background: black;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   padding: 200rpx 0;
+   box-sizing: border-box;
+ }
+
+ .content-view {
+   flex: 1;
+   margin-top: 20px;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+ }
+
+ .content-main {
+   color: #e60000;
+   font-weight: bold;
+   font-size: 36pt;
+ }
+
+ .divider {
+   background: #d8d8d8;
+   height: 1px;
+   align-self: center;
+   margin-left: 5%;
+   margin-right: 5%;
+ }
+
+ .button-parent-view {
+   margin: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+
+ .table-cell {
+   margin-left: 30px;
+   margin-right: 30px;
+   margin-top: 5px;
+   font-size: 16sp;
+   line-height: 20sp;
+   color: #999999;
+ }
+
+ .table-content {
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+   overflow: auto;
+ }
+
+ .table-cell {
+   margin-left: 30px;
+   margin-right: 30px;
+   margin-top: 10px;
+   justify-content: space-between;
+   display: flex;
+   flex-direction: row;
+ }
+
+ .table-label {
+   color: #4a4a4a;
+   font-size: 18sp;
+   line-height: 28sp;
+ }
+
+ .table-value {
+   color: #4a4a4a;
+   font-size: 18sp;
+   line-height: 18sp;
+ }
+
+ .table-footer {
+   margin-left: 30px;
+   margin-right: 30px;
+   margin-top: 5px;
+   font-size: 16sp;
+   line-height: 20sp;
+   color: #999999;
+ }
+
+ @font-face {
+   font-family: vodafone;
+   src: url(/assets/fonts/vodafone/Vodafone.woff2);
+ }
+
+ @font-face {
+   font-family: vodafone-bold;
+   src: url(/assets/fonts/vodafone/Vodafone-Bold.woff2);
+ }
+
+ @font-face {
+   font-family: vodafone-extrabold;
+   src: url(/assets/fonts/vodafone/Vodafone-ExtraBold.woff2);
+ }
+
+ @font-face {
+   font-family: vodafone-light;
+   src: url(/assets/fonts/vodafone/Vodafone-Light.woff2);
+ }
+
+ @font-face {
+   font-family: Roboto-Medium;
+   src: url(/assets/fonts/vodafone/Roboto-Medium.woff);
+ }

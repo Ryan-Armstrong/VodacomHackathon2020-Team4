@@ -1,0 +1,15 @@
+{
+  "usingComponents": {
+    "grid": "mini-antui/es/grid/index",
+    "tabs": "mini-antui/es/tabs/index",
+    "custom-button": "../../components/custom-button/custom-button",
+    "history-line-item": "../../components/history-line-item/history-line-item",
+    "tab-content": "mini-antui/es/tabs/tab-content/index",
+    "list": "mini-antui/es/list/index",
+    "list-item": "mini-antui/es/list/list-item/index"
+  },
+    "titleBarColor":"#e60000",
+    "titleImage":"../../assets/images/vodacom.png",
+    "defaultTitle":"Advance history",
+    "left":{}
+}
