@@ -6,7 +6,6 @@ Page({
     totalRepayment: 0
   },
   onLoad() {
-    console.log(app.selectedOption);
     let totalRepayment = Number(app.selectedOption.price) + Number(app.selectedOption.fee);
     this.setData({
       option: app.selectedOption,
@@ -15,12 +14,21 @@ Page({
   },
   confirm() {
     my.request({
-      url: 'http://localhost:9001/api/hackton/submit',
+      url: 'http://192.168.1.103:3005/submit',
       method: 'POST',
       data: { totalRepayment: this.data.totalRepayment, option: this.data.option },
       timeout: 30000,
       success: (result) => {
-
+        app.loggedUser = result.data.loggedInUsers;
+        if (result.data.success) {
+          my.navigateTo({
+            url: '../success-page/success-page',
+          });
+        }else{
+          my.navigateTo({
+            url: '../recharge-page/recharge-page',
+          });
+        }
       },
       fail: () => {
 
@@ -29,6 +37,9 @@ Page({
 
       }
     });
+  },
+  onButtonAction() {
+    console.log("sdgsgs");
   },
   onReady() {
     // Page loading is complete

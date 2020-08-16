@@ -8,10 +8,5 @@
   color: #333333;
   font-size: 16sp;
   line-height: 20sp;
-}
-
-.one-line {
-  margin-left: 5%;
-  margin-right: 5%;
-  flex: 1;
+  text-align: center;
 }

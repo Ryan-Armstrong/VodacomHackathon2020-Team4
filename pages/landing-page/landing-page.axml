@@ -1,21 +1,20 @@
 <view class="page">
   <view class="top-view">
-   <view class="wallet-comp-parent">
-    <image mode="scaleToFill" class="vodapayIcon" src="{{'../../assets/images/vodapay.png'}}" background-size="cover"></image>
-     <view class="wallet-comp">
-      <view class="wallet-view">
-        <view class="currency">
-          <text class="currency-label">R</text>
+    <view class="wallet-comp-parent">
+      <image mode="scaleToFill" class="vodapayIcon" src="{{'../../assets/images/vodapay.png'}}" background-size="cover"></image>
+      <view class="wallet-comp">
+        <view class="wallet-view">
+          <view class="currency">
+            <text class="currency-label">R</text>
+          </view>
+          <text class="price-label">261.50</text>
+          <image mode="scaleToFill" class="expand-icon" src="{{'../../assets/images/expand-arrow.png'}}" background-size="cover"></image>
         </view>
-        <text class="price-label">261.50</text>
-        <image mode="scaleToFill" class="expand-icon" src="{{'../../assets/images/expand-arrow.png'}}" background-size="cover"></image>
-      </view>
-      <view class="top-up-view">
-        <text class="top-up-label">TOP UP</text>
+        <view class="top-up-view" onTap="onLogin">
+          <text class="top-up-label">LOGIN</text>
+        </view>
       </view>
     </view>
-   </view>
-    
   </view>
   <view class="floating-view">
     <view class="floating-view-comp">
@@ -40,4 +39,13 @@
   </view>
   <view style="margin: 30rpx;">
     <grid onGridItemClick="onItemClick" columnNum="{{3}}" list="{{services}}" />
-</view>
+    <view >
+      <modal class="modal" show="{{modalOpened}}" onModalClick="onModalClick" onModalClose="onModalClose" topImage='../../assets/images/vodacom.png'>
+        <view slot="header" class="modal-text">Retrieve user information</view>
+        <view class="center-content">
+          <input style="width: 100%;position: relative;margin-bottom: 50rpx;padding-left: 30rpx;line-height: 80rpx;height: 80rpx;background: none;color: black;box-sizing: border-box;border: 1px solid #e60000;border-radius: 16rpx;overflow: hidden;text-overflow: ellipsis;" placeholder="Phone number" value="{{phoneNumber}}" onInput="onInput" value="{{inputValue}}" />
+        </view>
+        <view slot="footer" class="modal-text">Submit</view>
+      </modal>
+    </view>
+  </view>

@@ -1,5 +1,5 @@
 <view class="page">
-  <header />
+  <header   titleLabel = 'Advance amount left:' subtitleLabel = "You qualify for:"  titleValue = "R{{user.amountAdvance}}" subtitleValue="R{{user.amountQualify}}"/>
   <view class="tab-comp">
     <tabs tabs="{{tabs}}" activeCls="{{activeTab ===0 ?'airtimeTab':'dataTab'}}" tabBarUnderlineColor={"#ffffff"} showPlus="{{false}}" onTabClick="handleTabClick" onChange="handleTabChange" onPlusClick="handlePlusClick" activeTab="{{activeTab}}">
       <block a:for="{{tabs}}">
@@ -7,19 +7,19 @@
           <view class="list">
             <list >
               <view slot="header">
-      {{options[item.key].title}} 
-        <image mode="scaleToFill"  class="line-item-icon" src="{{`../../assets/images/info.png`}}" background-size="cover"></image>
+      {{options[item.key].title}}
+                <image mode="scaleToFill" class="line-item-icon" src="{{`../../assets/images/info.png`}}" background-size="cover"></image>
               </view>
               <block a:for="{{options[item.key].items}}">
-              <view class="line">
-                 <view class="line-item-icon-view">
-                    <image mode="scaleToFill"  class="line-item-icon" src="{{`../../assets/images/${item.icon}`}}" background-size="cover"></image>
+                <view class="line">
+                  <view class="line-item-icon-view">
+                    <image mode="scaleToFill" class="line-item-icon" src="{{`../../assets/images/${item.icon}`}}" background-size="cover"></image>
                   </view>
-                <list-item className="list-item" multipleLine="{{true}}" wrap="{{true}}" arrow="{{true}}" align="{{item.align}}" index="{{index}}" onClick="onItemClick" key="items-{{index}}">
-                   <text class="list-item-text">{{item.title}}</text>
-                  <view class="am-list-brief">{{item.details}}</view>
-                </list-item>
-              </view>
+                  <list-item className="list-item" multipleLine="{{true}}" wrap="{{true}}" arrow="{{true}}" align="{{item.align}}" index="{{index}}" onClick="onItemClick" key="items-{{index}}">
+                    <text class="list-item-text">{{item.title}}</text>
+                    <view class="am-list-brief">{{item.details}}</view>
+                  </list-item>
+                </view>
               </block>
             </list></view>
         </tab-content>

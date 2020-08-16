@@ -1,0 +1,6 @@
+<view class="history-view">
+    <view class="history-line-one-view">
+        <text class="history-left-text">Repayment: {{repayment}}</text>
+        <text class="history-detail-text">{{date}}</text>
+    </view>
+</view>

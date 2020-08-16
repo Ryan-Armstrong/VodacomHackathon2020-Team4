@@ -1,0 +1,17 @@
+<view class="page">
+  <info-component image="info-outline.png" title="Please recharge" isColumn="{{true}}" messages="{{messages}}" />
+  <view class="center-content" style="{{isColumn?'flex-direction:column;margin-top:20%;':'margin-top:20%;'}}">
+    <view class="center-content" style="{{isColumn?'margin-top:10px;':'margin-left:5px;margin-right:5px;'}}">
+      <custom-button text="Recharge" onClickMe="onRecharge" style="{{isColumn?'':'width:158px;'}}"></custom-button>
+    </view>
+  </view>
+  <view>
+    <modal class="modal" show="{{modalOpened}}" onModalClick="onModalClick" onModalClose="onModalClose" topImage='../../assets/images/vodacom.png'>
+      <view slot="header" class="modal-text">Recharge airtime</view>
+      <view class="center-content">
+        <input style="width: 100%;position: relative;margin-bottom: 50rpx;padding-left: 30rpx;line-height: 80rpx;height: 80rpx;background: none;color: black;box-sizing: border-box;border: 1px solid #e60000;border-radius: 16rpx;overflow: hidden;text-overflow: ellipsis;" placeholder="Airtime amout" value="{{airtimeAmount}}" onInput="onInput" />
+      </view>
+      <view slot="footer" class="modal-text">Recharge</view>
+    </modal>
+  </view>
+</view>

@@ -1,18 +1,19 @@
+const app = getApp();
 Page({
   data: {
-    title: "Airtime advance",
-    options: []
+    outstandingBalance: 0,
+    totalFees: 0,
+    advances: 0,
+    amountAdvance: 0,
+
   },
   onLoad(query) {
-    // Page load
-    console.info(`Page onLoad with query: ${JSON.stringify(query)}`);
-    my.request({
-      url: 'http://localhost:3000/options',
-    }).then(resp => {
-      this.setData({
-        options:resp.data
-      })
-    });
+    this.setData({
+      outstandingBalance: app.loggedUser.advances+app.loggedUser.totalFees,
+      totalFees: app.loggedUser.totalFees,
+      advances: app.loggedUser.advances,
+      amountAdvance: app.loggedUser.amountAdvance,
+    })
   },
 
   onReady() {

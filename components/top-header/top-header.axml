@@ -1,0 +1,6 @@
+<view class="center-content" style="margin-top:30%;">
+    <image mode="scaleToFill" class="center-icon" src="{{`../../assets/images/${image}`}}" background-size="cover"></image>
+</view>
+<view class="center-content" style="margin-top:10%;">
+    <text class="info-title">{{title}}</text>
+</view>

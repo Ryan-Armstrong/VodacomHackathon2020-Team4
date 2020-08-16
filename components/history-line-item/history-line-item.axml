@@ -5,6 +5,6 @@
     </view>
     <view class="history-view-others">
         <text class="history-left-text">Access fee: R{{fee}}</text>
-        <text class="history-left-text" style="margin-top:5px;">Access fee: R{{totalRepayment}}</text>
+        <text class="history-left-text" style="margin-top:5px;">Total repayment R{{totalRepayment}}</text>
     </view>
 </view>

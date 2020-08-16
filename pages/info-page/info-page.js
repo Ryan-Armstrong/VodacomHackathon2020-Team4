@@ -1,18 +1,21 @@
+const app = getApp();
 Page({
   data: {
-    title: "Airtime advance",
-    options: []
-  },
-  onLoad(query) {
-    // Page load
-    console.info(`Page onLoad with query: ${JSON.stringify(query)}`);
-    my.request({
-      url: 'http://localhost:3000/options',
-    }).then(resp => {
-      this.setData({
-        options:resp.data
-      })
-    });
+    image: "error.png",
+    title: "Please recharge",
+    isColumn: true,
+    buttons: [{ name: "ButtonOne",action:"onButton1", outline: false }, { name: "ButtonTwo",action:"onButton2", outline: true }],
+    messages: ["You cannot use this service, because you’ve got an outstanding balance of R50.",
+      "Please recharge in order to pay your outstanding advances."]
+  },                                                                   
+  onLoad() {
+    this.setData({
+      image: app.infoPageData.image,
+      title: app.infoPageData.title,
+      isColumn: app.infoPageData.isColumn,
+      buttons: app.infoPageData.buttons,
+      messages: app.infoPageData.messages
+    })
   },
 
   onReady() {

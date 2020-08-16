@@ -1,9 +1,8 @@
 {
+  "component": true,
   "usingComponents": {
     "grid": "mini-antui/es/grid/index",
     "top-header": "../../components/top-header/top-header",
     "custom-button": "../../components/custom-button/custom-button"
-  },
-  "titleBarColor": "#e60000",
-  "defaultTitle": "Successfully"
+  }
 }

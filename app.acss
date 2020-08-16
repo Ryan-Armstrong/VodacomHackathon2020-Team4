@@ -118,6 +118,24 @@
   border-radius: 10px;
   background: #333333;
 }
+.info-title{
+  color: #333333;
+  font-size: 27sp;  
+  line-height: 31.5sp;
+}
+.modal{
+  background: #e60000;
+}
+
+.text-size-14sp{
+  font-size: 14sp;
+  line-height: 14sp;
+  color:#666666;
+}
+.text-size-16sp{
+   font-size: 14sp;
+}
+
  @font-face {
    font-family: vodafone;
    src: url(/assets/fonts/vodafone/Vodafone.woff2);

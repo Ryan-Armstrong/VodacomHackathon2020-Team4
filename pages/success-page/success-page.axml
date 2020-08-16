@@ -1,17 +1,16 @@
-<view class="success-page">
-
-<image class="succeess-icon" src="{{'../../assets/success.png'}}" mode="scaleToFill"background-size="cover"></image>
-
-<view class="succeess-label-title">
-  <text class="succeess-label">Success</text>
-  </view>
-
-  <view class="message">
-    <text class="message">We've received your request for an airtime advance. You'll receive an SMS once your airtime is available for use.
-
-Please note: You have 30 days
-to pay the advancee.</text>
-  </view>
-   <button class="button">Okay</button>
-  </view>
+<view class="page">
+  <top-header title="Success" image="success.png" />
+  <view class="vertical-content" style="margin:10%;" >
+    <view class="center-content" style="text-align:center;">
+      <text class="message-text">We've received your request for an airtime advance. You'll receive an SMS once your airtime is available for use.</text>
     </view>
+    <view style="margin-top:5%;text-algin:center">
+      <text class="message-text" style="font-weight:bold;">Please note:</text>
+      <text>{{" "}}</text>
+      <text class="message-text">You have 30 daysto pay the advancee.</text>
+    </view>
+  </view>
+  <view class="center-content" style="{{'margin-top:30%;'}}">
+    <custom-button text="Okay" onClickMe="onOkay" ></custom-button>
+  </view>
+</view>

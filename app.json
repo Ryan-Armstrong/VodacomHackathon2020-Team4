@@ -1,14 +1,16 @@
 {
   "pages": [
-    
-   "pages/landing-page/landing-page",
+    "pages/landing-page/landing-page",
     "pages/selection-page/selection-page",
     "pages/details-page/details-page",
     "pages/advance-history-page/advance-history-page",
     "pages/outstanding-balance-page/outstanding-balance-page",
     "pages/how-it-works-page/how-it-works-page",
     "pages/processing-error/processing-error",
-    "pages/success-page/success-page"
+    "pages/success-page/success-page",
+    "pages/info-page/info-page",
+    "pages/recharge-page/recharge-page",
+    "pages/error-page/error-page"
   ],
   "window": {
     "titleBarColor": "#e60000",

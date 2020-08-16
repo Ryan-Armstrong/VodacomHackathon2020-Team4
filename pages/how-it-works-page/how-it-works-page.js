@@ -1,18 +1,11 @@
+const app = getApp();
 Page({
   data: {
     title: "Airtime advance",
     options: []
   },
   onLoad(query) {
-    // Page load
-    console.info(`Page onLoad with query: ${JSON.stringify(query)}`);
-    my.request({
-      url: 'http://localhost:3000/options',
-    }).then(resp => {
-      this.setData({
-        options:resp.data
-      })
-    });
+    
   },
   takeAdvance(){
     my.navigateBack();

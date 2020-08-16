@@ -1,0 +1,6 @@
+.messages-text {
+  color: #333333;
+  font-size: 16sp;
+  line-height: 20sp;
+  text-align: center;
+}

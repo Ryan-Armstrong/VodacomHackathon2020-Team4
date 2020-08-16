@@ -1,3 +1,15 @@
 <view class="page">
-  <options optionData="{{options}}" />  
+  <top-header title="{{title}}" image="{{image}}" />
+  <view a:for="{{messages}}">
+    <view class="center-content" style="margin-left:10%;margin-right:10%;margin-top:5%;">
+      <text class="messages-text">{{item}}</text>
+    </view>
+  </view>
+  <view class="center-content" style="{{isColumn?'flex-direction:column;margin-top:20%;':'margin-top:20%;'}}">
+    <view a:for="{{buttons}}">
+      <view class="center-content" style="{{isColumn?'margin-top:10px;':'margin-left:5px;margin-right:5px;'}}">
+        <custom-button text="{{item.name}}" outline="{{item.outline}}" onClickMe="{{item.action}}" style="{{isColumn?'':'width:158px;'}}"></custom-button>
+      </view>
+    </view>
+  </view>
 </view>

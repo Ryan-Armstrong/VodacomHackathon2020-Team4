@@ -4,10 +4,11 @@
     "tabs": "mini-antui/es/tabs/index",
     "custom-button": "../../components/custom-button/custom-button",
     "history-line-item": "../../components/history-line-item/history-line-item",
+    "repayment-line-item": "../../components/repayment-line-item/repayment-line-item",
     "tab-content": "mini-antui/es/tabs/tab-content/index",
     "list": "mini-antui/es/list/index",
     "list-item": "mini-antui/es/list/list-item/index"
   },
-    "titleBarColor":"#e60000",
-    "defaultTitle":"Advance history"
+  "titleBarColor": "#e60000",
+  "defaultTitle": "Advance history"
 }

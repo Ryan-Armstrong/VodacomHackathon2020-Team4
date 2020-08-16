@@ -1,5 +1,8 @@
 App({
   selectedOption: {},
+  loggedUser:{},
+  infoPageData:{},
+  errorType:"",
   onLaunch(options) {
     // Page opens for the first time
     console.info('App onLaunch');

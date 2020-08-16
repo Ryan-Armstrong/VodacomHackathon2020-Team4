@@ -12,17 +12,40 @@ Page({
       },
     ],
     activeTab: 0,
-    history: [
-      { title: "R5 airtime", price: 5, totalRepayment: 6, fee: 1, icon: "topup.png" },
-      { title: "R10 airtime", price: 5, totalRepayment: 6, fee: 1, icon: "topup.png" },
-      { title: "60MB for R9", price: 9, totalRepayment: 10, fee: 1, icon: "topup.png" },
-      { title: "60MB for R9", price: 9, totalRepayment: 10, fee: 1, icon: "topup.png" },
-      { title: "R12 airtime", price: 12, totalRepayment: 13, fee: 1, icon: "topup.png" }
-    ]
+    history: [],
+    repayments:[]
   },
   onLoad(query) {
     // Page load
-    console.info(`Page onLoad with query: ${JSON.stringify(query)}`);
+    my.showLoading();
+    my.request({
+      url: 'http://192.168.1.103:3005/history',
+    }).then(resp => {
+      my.hideLoading();
+      this.populateHistory(resp.data.advanceHistory);
+      this.populateAdvanceHistory(resp.data.repaymentHistory);
+    });
+  },
+  populateHistory(historyData){
+    let history = [];
+    historyData.map((item)=>{
+      let obj =  { title: item.option.title, date:item.date, price: item.option.price, totalRepayment: item.totalRepayment, fee:item.option.fee, icon: "topup.png" };
+      history.push(obj);
+    })
+    this.setData({
+      history:history
+    })
+  },
+  populateAdvanceHistory(historyData){
+    let repayments = [];
+    historyData.map((item)=>{
+      console.log(item);
+      let obj =  { repayment: item.repayment, date:item.datePaid,icon: "topup.png" };
+      repayments.push(obj);
+    })
+    this.setData({
+      repayments:repayments
+    })
   },
   handleTabClick({ index }) {
     this.setData({

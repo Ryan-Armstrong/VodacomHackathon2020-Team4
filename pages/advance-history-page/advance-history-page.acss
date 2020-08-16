@@ -16,4 +16,5 @@
 .list{
   height: 400px;
   overflow: auto;
+  font-weight: normal;
 }

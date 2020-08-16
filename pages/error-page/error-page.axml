@@ -1,0 +1,13 @@
+<view class="error-page">
+  <info-component image="error.png" title="Oops…" isColumn="{{true}}" messages="{{messages}}" />
+  <view class="center-content" style="{{'margin-top:20%;width:100%;'}}" a:if="{{ errorType ==='eligibility'}}">
+    <custom-button text="Okay" onClickMe="onOkay" style="width:80%;"></custom-button>
+  </view>
+  <view class="center-content" style="{{'margin-top:20%;width:100%;'}}" a:if="{{ errorType ==='processing'}}">
+    <custom-button text="Cancel" onClickMe="onCancel" style="{{'width:158px;'}}"></custom-button>
+    <custom-button text="Okay" onClickMe="onOkay" style="{{'width:158px;'}}"></custom-button>
+  </view>
+  <view class="center-content" style="{{'margin-top:20%;width:100%;'}}" a:if="{{ errorType ==='nopayment'}}">
+    <custom-button text="Okay" onClickMe="onOkay"></custom-button>
+  </view>
+</view>

@@ -2,7 +2,9 @@
   "usingComponents": {
     "grid": "mini-antui/es/grid/index",
     "top-header": "../../components/top-header/top-header",
-    "custom-button": "../../components/custom-button/custom-button"
+    "custom-button": "../../components/custom-button/custom-button",
+    "info-component": "../../components/info-component/info-component",
+     "modal": "mini-antui/es/modal/index"
   },
   "titleBarColor": "#e60000",
   "titleImage": "../../assets/images/vodacom.png",
