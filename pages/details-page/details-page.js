@@ -14,7 +14,7 @@ Page({
   },
   confirm() {
     my.request({
-      url: 'http://192.168.1.103:3005/submit',
+      url: `${app.connectionURL}/submit`,
       method: 'POST',
       data: { totalRepayment: this.data.totalRepayment, option: this.data.option },
       timeout: 30000,

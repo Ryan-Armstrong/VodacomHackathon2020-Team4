@@ -37,7 +37,7 @@ Page({
     });
     my.showLoading();
     my.request({
-      url: 'http://192.168.1.103:3005/recharge',
+      url: `${app.connectionURL}/recharge`,
       headers: {},
       method: 'POST',
       data: { airtimeAmount: this.data.airtimeAmount },

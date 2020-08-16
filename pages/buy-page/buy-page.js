@@ -1,3 +1,4 @@
+const app = getApp();
 Page({
   data: {
     title: "Airtime advance",
@@ -7,7 +8,7 @@ Page({
     // Page load
     console.info(`Page onLoad with query: ${JSON.stringify(query)}`);
     my.request({
-      url: 'http://localhost:3000/options',
+      url: `${app.connectionURL}/options`,
     }).then(resp => {
       this.setData({
         options:resp.data

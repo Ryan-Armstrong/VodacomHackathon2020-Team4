@@ -24,7 +24,7 @@ Page({
     })
     my.showLoading();
     my.request({
-      url: 'http://192.168.1.103:3005/options',
+      url: `${app.connectionURL}/options`,
     }).then(resp => {
       my.hideLoading();
       this.setData({

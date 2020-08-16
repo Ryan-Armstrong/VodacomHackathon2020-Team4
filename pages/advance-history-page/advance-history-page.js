@@ -1,3 +1,4 @@
+const app = getApp();
 Page({
   data: {
     title: "Airtime advance",
@@ -19,7 +20,7 @@ Page({
     // Page load
     my.showLoading();
     my.request({
-      url: 'http://192.168.1.103:3005/history',
+      url: `${app.connectionURL}/history`,
     }).then(resp => {
       my.hideLoading();
       this.populateHistory(resp.data.advanceHistory);

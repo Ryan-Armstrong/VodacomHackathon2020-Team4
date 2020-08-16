@@ -51,7 +51,7 @@ Page({
     });
     my.showLoading();
     my.request({
-      url: 'http://192.168.1.103:3005/login',
+      url: `${app.connectionURL}/login`,
       headers: {},
       method: 'GET',
       data: { phoneNumber: this.data.phoneNumber },

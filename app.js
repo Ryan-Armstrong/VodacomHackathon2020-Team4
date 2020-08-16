@@ -1,12 +1,17 @@
+
 App({
   selectedOption: {},
   loggedUser:{},
   infoPageData:{},
   errorType:"",
+  isProd:true,
+  connectionURL:"",
   onLaunch(options) {
+    const app = getApp();
     // Page opens for the first time
     console.info('App onLaunch');
     const sysInfo = my.getSystemInfoSync();
+    app.connectionURL = app.isProd?"http://ec2-18-231-179-150.sa-east-1.compute.amazonaws.com:3005":"http://192.168.1.103:3005";
     console.log(sysInfo);
   },
   onOptionMenuClick() {
