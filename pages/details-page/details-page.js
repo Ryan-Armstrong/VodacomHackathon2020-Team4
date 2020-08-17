@@ -13,30 +13,56 @@ Page({
     })
   },
   confirm() {
-    my.request({
-      url: `${app.connectionURL}/submit`,
-      method: 'POST',
-      data: { totalRepayment: this.data.totalRepayment, option: this.data.option },
-      timeout: 30000,
-      success: (result) => {
-        app.loggedUser = result.data.loggedInUsers;
-        if (result.data.success) {
-          my.navigateTo({
-            url: '../success-page/success-page',
-          });
-        }else{
-          my.navigateTo({
-            url: '../recharge-page/recharge-page',
-          });
+    my.showLoading();
+    let result = this.subumit({ totalRepayment: this.data.totalRepayment, option: this.data.option });
+    app.loggedUser = result.loggedInUsers;
+    my.hideLoading();
+    if (result.success) {
+      my.navigateTo({
+        url: '../success-page/success-page',
+      });
+    } else {
+      my.navigateTo({
+        url: '../recharge-page/recharge-page',
+      });
+    }
+  },
+
+  subumit(data) {
+    let loggedInUsers = app.loggedUser;
+    if (!loggedInUsers.msidn) {
+      resp.json({ success: false, error: "Not logged in" });
+    } else {
+      if (loggedInUsers.balance >= data.totalRepayment) {
+        loggedInUsers.balance = loggedInUsers.balance - data.totalRepayment;
+        return { success: true, loggedInUsers: loggedInUsers };
+      } else {
+        if (data.totalRepayment > loggedInUsers.balance) {
+          loggedInUsers.balance = 0;
+          data.totalRepayment = data.totalRepayment - loggedInUsers.balance;
         }
-      },
-      fail: () => {
-
-      },
-      complete: () => {
-
+        if (data.totalRepayment > loggedInUsers.amountAdvance) {
+          return {
+            success: false,
+            reason: "Outstanding Balance",
+            outstandingBalance: loggedInUsers.advances + loggedInUsers.totalFees,
+            loggedInUsers: loggedInUsers,
+          };
+        } else {
+          loggedInUsers.advances += data.option.price;
+          loggedInUsers.totalFees += data.option.fee;
+          loggedInUsers.amountAdvance -= data.totalRepayment;
+          let date = new Date();
+          let historyEntry = {
+            option: data.option,
+            totalRepayment: data.totalRepayment,
+            date: date,
+          };
+          loggedInUsers.history.push(historyEntry);
+          return { success: true, loggedInUsers: loggedInUsers };
+        }
       }
-    });
+    }
   },
   onButtonAction() {
     console.log("sdgsgs");

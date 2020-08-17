@@ -50,40 +50,76 @@ Page({
       modalOpened: false,
     });
     my.showLoading();
-    my.request({
-      url: `${app.connectionURL}/login`,
-      headers: {},
-      method: 'GET',
-      data: { phoneNumber: this.data.phoneNumber },
-      timeout: 30000,
-      dataType: 'json',
-      success: (result) => {
-        app.loggedUser = result.data;
-        if (!app.loggedUser.active && !app.loggedUser.forbidden) {
-          app.errorType = "eligibility";
-          my.navigateTo({
-            url: '../error-page/error-page',
-          });
-        } else if (app.loggedUser.forbidden) {
-          app.errorType = "nopayment";
-          my.navigateTo({
-            url: '../error-page/error-page',
-          });
-        }
-        else if (app.loggedUser.amountAdvance < 5 || app.loggedUser.amountQualify === 0) {
-          my.navigateTo({
-            url: '../recharge-page/recharge-page',
-          });
-        }
-      },
-      fail: () => {
 
-      },
-      complete: () => {
-        my.hideLoading();
-      }
-    });
+    app.loggedUser = this.login(this.data.phoneNumber);
+    
+    my.hideLoading();
+
+    if (!app.loggedUser.active && !app.loggedUser.forbidden) {
+      app.errorType = "eligibility";
+      my.navigateTo({
+        url: '../error-page/error-page',
+      });
+    } else if (app.loggedUser.forbidden) {
+      app.errorType = "nopayment";
+      my.navigateTo({
+        url: '../error-page/error-page',
+      });
+    }
+    else if (app.loggedUser.amountAdvance < 5 || app.loggedUser.amountQualify === 0) {
+      my.navigateTo({
+        url: '../recharge-page/recharge-page',
+      });
+    }
+
+
+
+    // my.request({
+    //   url: `${app.connectionURL}/login`,
+    //   headers: {},
+    //   method: 'GET',
+    //   data: { phoneNumber: this.data.phoneNumber },
+    //   timeout: 30000,
+    //   dataType: 'json',
+    //   success: (result) => {
+    //     app.loggedUser = result.data;
+    //     if (!app.loggedUser.active && !app.loggedUser.forbidden) {
+    //       app.errorType = "eligibility";
+    //       my.navigateTo({
+    //         url: '../error-page/error-page',
+    //       });
+    //     } else if (app.loggedUser.forbidden) {
+    //       app.errorType = "nopayment";
+    //       my.navigateTo({
+    //         url: '../error-page/error-page',
+    //       });
+    //     }
+    //     else if (app.loggedUser.amountAdvance < 5 || app.loggedUser.amountQualify === 0) {
+    //       my.navigateTo({
+    //         url: '../recharge-page/recharge-page',
+    //       });
+    //     }
+    //   },
+    //   fail: () => {
+
+    //   },
+    //   complete: () => {
+    //     my.hideLoading();
+    //   }
+    // });
   },
+
+  login(phoneNumber) {
+    let filteredUsers = app.users.filter((item) => {
+      return item.msidn === phoneNumber;
+    });
+    let currentUser = {};
+    if (filteredUsers.length > 0) {
+      currentUser = filteredUsers[0];
+    }
+    return currentUser;
+  },
+
   onModalClose() {
     this.setData({
       modalOpened: false,

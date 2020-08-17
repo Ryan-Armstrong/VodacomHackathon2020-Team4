@@ -36,24 +36,46 @@ Page({
       modalOpened: false,
     });
     my.showLoading();
-    my.request({
-      url: `${app.connectionURL}/recharge`,
-      headers: {},
-      method: 'POST',
-      data: { airtimeAmount: this.data.airtimeAmount },
-      timeout: 30000,
-      dataType: 'json',
-      success: (result) => {
-        app.loggedUser = result.data;
-        my.navigateBack(100);
-      },
-      fail: () => {
+    app.loggedUser = this.recharge(this.data.airtimeAmount);
+    my.navigateBack(100);
+    my.hideLoading();
+  },
 
-      },
-      complete: () => {
-        my.hideLoading();
+  recharge(value) {
+    let airtimeAmount = Number(value);
+    let loggedInUsers = app.loggedUser;
+    let totalRepayment = loggedInUsers.advances + loggedInUsers.totalFees;
+    if (airtimeAmount > totalRepayment) {
+      loggedInUsers.advances = 0;
+      loggedInUsers.totalFees = 0;
+      loggedInUsers.amountAdvance = loggedInUsers.amountQualify;
+      loggedInUsers.balance = airtimeAmount - totalRepayment;
+    } else {
+      if (airtimeAmount > loggedInUsers.advances) {
+        loggedInUsers.balance = loggedInUsers.advances - airtimeAmount;
+        loggedInUsers.advances = 0;
+        loggedInUsers.amountAdvance =
+          loggedInUsers.amountQualify - loggedInUsers.totalFees;
+      } else {
+        loggedInUsers.advances = loggedInUsers.advances - airtimeAmount;
       }
-    });
+      if (
+        loggedInUsers.advances === 0 &&
+        loggedInUsers.balance > loggedInUsers.totalFees
+      ) {
+        loggedInUsers.balance = loggedInUsers.balance - loggedInUsers.totalFees;
+        loggedInUsers.totalFees = 0;
+        loggedInUsers.amountAdvance = loggedInUsers.amountQualify;
+      }
+    }
+    let date = new Date();
+    let repaymentEntry = {
+      repayment: airtimeAmount,
+      owing: loggedInUsers.owing,
+      datePaid: date,
+    };
+    loggedInUsers.repayments.push(repaymentEntry);
+    return loggedInUsers;
   },
   onModalClose() {
     this.setData({

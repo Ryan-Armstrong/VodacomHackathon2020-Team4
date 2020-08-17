@@ -17,15 +17,12 @@ Page({
     repayments:[]
   },
   onLoad(query) {
-    // Page load
     my.showLoading();
-    my.request({
-      url: `${app.connectionURL}/history`,
-    }).then(resp => {
-      my.hideLoading();
-      this.populateHistory(resp.data.advanceHistory);
-      this.populateAdvanceHistory(resp.data.repaymentHistory);
-    });
+    let result = app.loggedUser;
+    console.log(result);
+    this.populateHistory(result.history);
+    this.populateAdvanceHistory(result.repayments);
+    my.hideLoading();
   },
   populateHistory(historyData){
     let history = [];
@@ -33,6 +30,7 @@ Page({
       let obj =  { title: item.option.title, date:item.date, price: item.option.price, totalRepayment: item.totalRepayment, fee:item.option.fee, icon: "topup.png" };
       history.push(obj);
     })
+    console.log(history);
     this.setData({
       history:history
     })

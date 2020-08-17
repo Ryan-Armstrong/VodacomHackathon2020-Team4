@@ -7,13 +7,13 @@ Page({
   onLoad(query) {
     // Page load
     console.info(`Page onLoad with query: ${JSON.stringify(query)}`);
-    my.request({
-      url: `${app.connectionURL}/options`,
-    }).then(resp => {
-      this.setData({
-        options:resp.data
-      })
-    });
+    // my.request({
+    //   url: `${app.connectionURL}/options`,
+    // }).then(resp => {
+    //   this.setData({
+    //     options:resp.data
+    //   })
+    // });
   },
 
   onReady() {

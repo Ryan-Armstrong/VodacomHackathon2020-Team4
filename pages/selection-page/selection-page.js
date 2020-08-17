@@ -22,15 +22,15 @@ Page({
     this.setData({
       user:app.loggedUser
     })
-    my.showLoading();
-    my.request({
-      url: `${app.connectionURL}/options`,
-    }).then(resp => {
-      my.hideLoading();
-      this.setData({
-        options: resp.data
-      })
-    });
+    // my.showLoading();
+    // my.request({
+    //   url: `${app.connectionURL}/options`,
+    // }).then(resp => {
+    //   my.hideLoading();
+    //   this.setData({
+    //     options: resp.data
+    //   })
+    // });
   },
   onOptionMenuClick(e) {
     my.navigateTo({
