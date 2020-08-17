@@ -6,8 +6,8 @@
     </view>
   </view>
   <view>
-    <modal class="modal" show="{{modalOpened}}" onModalClick="onModalClick" onModalClose="onModalClose" topImage='../../assets/images/vodacom.png'>
-      <view slot="header" class="modal-text">Recharge airtime</view>
+    <modal class="modal" topImageSize="sm" show="{{modalOpened}}" onModalClick="onModalClick" onModalClose="onModalClose" topImage='../../assets/images/vodacom.png'>
+      <!-- <view slot="header" class="modal-text">Recharge airtime</view> -->
       <view class="center-content">
         <input style="width: 100%;position: relative;margin-bottom: 50rpx;padding-left: 30rpx;line-height: 80rpx;height: 80rpx;background: none;color: black;box-sizing: border-box;border: 1px solid #e60000;border-radius: 16rpx;overflow: hidden;text-overflow: ellipsis;" placeholder="Airtime amout" value="{{airtimeAmount}}" onInput="onInput" />
       </view>
