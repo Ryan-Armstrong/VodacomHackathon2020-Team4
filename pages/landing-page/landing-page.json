@@ -4,6 +4,7 @@
      "modal": "mini-antui/es/modal/index"
   },
   "window": {
-    "titleBarColor":"#eb4034"
+    "titleBarColor":"#e60000",
+    "titleColor":"#FFFFFF"
   }
 }

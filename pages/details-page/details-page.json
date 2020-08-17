@@ -6,5 +6,6 @@
     "footer": "mini-antui/es/footer/index"
   },
   "titleBarColor": "#e60000",
+  "titleColor":"#FFFFFF",
   "defaultTitle": "Airtime advance"
 }

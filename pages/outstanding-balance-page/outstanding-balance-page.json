@@ -4,5 +4,6 @@
     "options": "../../components/options/options"
   },
   "titleBarColor": "#e60000",
+  "titleColor":"#FFFFFF",
    "defaultTitle":"Outstanding balances"
 }

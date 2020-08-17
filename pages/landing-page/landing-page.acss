@@ -66,7 +66,7 @@
 
 .currency-label {
   font-size: 12pt;
-  color: #ffff;
+  color: white;
 }
 
 .top-up-label {
@@ -79,7 +79,7 @@
 
 .price-label {
   font-size: 22pt;
-  color: #ffff;
+  color: white;
 }
 
 .floating-view {
@@ -95,7 +95,7 @@
   justify-content: space-around;
   align-items: center;
   font-family: 'Roboto', sans-serif;
-  background-color: #fff;
+  background-color: white;
   border: none;
   border-radius: 10px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);

@@ -5,5 +5,6 @@
     "custom-button": "../../components/custom-button/custom-button"
   },
   "titleBarColor": "#e60000",
+  "titleColor": "#FFFFFF",
   "defaultTitle": "Successfully"
 }

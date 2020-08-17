@@ -4,7 +4,7 @@
     "options": "../../components/options/options"
   },
     "titleBarColor":"#e60000",
+    "titleColor":"#FFFFFF",
     "titleImage":"../../assets/images/vodacom.png",
-    "defaultTitle":"Airtime advance",
-    "left":{}
+    "defaultTitle":"Airtime advance"
 }

@@ -10,5 +10,6 @@
     "list-item": "mini-antui/es/list/list-item/index"
   },
   "titleBarColor": "#e60000",
+  "titleColor":"#FFFFFF",
   "defaultTitle": "Advance history"
 }

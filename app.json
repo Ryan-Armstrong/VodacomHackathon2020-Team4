@@ -10,10 +10,13 @@
     "pages/success-page/success-page",
     "pages/info-page/info-page",
     "pages/recharge-page/recharge-page",
-     "pages/error-page/error-page"
+    "pages/error-page/error-page"
   ],
   "window": {
     "titleBarColor": "#e60000",
+    "titleColor": "#FFFFFF",
+    "color": "white",
+    "barButtonTheme": "light",
     "enableWK": "YES",
     "enableDSL": true
   }

@@ -5,6 +5,7 @@
     "custom-button": "../../components/custom-button/custom-button"
   },
   "titleBarColor": "#e60000",
+  "titleColor":"#FFFFFF",
   "titleImage": "../../assets/images/vodacom.png",
   "defaultTitle": "Airtime advance",
   "left": {}

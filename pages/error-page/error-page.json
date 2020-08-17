@@ -6,5 +6,6 @@
     "info-component":"../../components/info-component/info-component"
   },
   "titleBarColor": "#e60000",
+  "titleColor":"#FFFFFF",
   "defaultTitle": "Oops Error"
 }

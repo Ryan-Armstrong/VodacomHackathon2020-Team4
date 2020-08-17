@@ -7,6 +7,7 @@
      "modal": "mini-antui/es/modal/index"
   },
   "titleBarColor": "#e60000",
+  "titleColor":"#FFFFFF",
   "titleImage": "../../assets/images/vodacom.png",
   "defaultTitle": "Airtime advance",
   "left": {}
