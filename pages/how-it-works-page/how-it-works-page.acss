@@ -1,12 +1,14 @@
 .howitworks-title-text {
   color: #4a4a4a;
-  font-size: 27sp;
+  font-size: 27px;
+  line-height: 0px;
+  font-weight: 'vodafone-light'
 }
 
 .howitworks-title-content {
-  font-size: 16sp;
+  font-size: 16px;
   color: #333333;
-  line-height: 20sp;
+  line-height: 20px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -14,9 +16,9 @@
 }
 
 .howitworks-title {
-  font-size: 16sp;
-  line-height: 20sp;
-  text-align: justify;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
   color: #333333;
   text-justify: inter-word;
 }

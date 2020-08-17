@@ -1,33 +1,25 @@
-.succeess-label
-{
+.succeess-label{
   color:black;
   font-size: 27px;
   align-self: center;
   padding-top: 56px;
   height:31.5px;
   width: 288px;
-     
 }
-
-.succeess-icon
-{
+.succeess-icon{
   width: 84px;
   height: 84px;
   align-self: center;
-
 }
-
-.succeess-label-title
-{
+.succeess-label-title{
    align-self: center;
    text-align: center;
    margin-top: 56px;
-
 }
 .messages-text {
   color: #333333;
-  font-size: 16sp;
-  line-height: 20sp;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   text-justify: inter-word
 }

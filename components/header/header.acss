@@ -23,16 +23,16 @@
  }
 
  .header-title {
-   font-size: 14sp;
+   font-size: 14px;
    font-weight: bold;
    font-family: 'vodafone-bold';
    color: #4a4a4a;
-   line-height: 18sp;
+   line-height: 18px;
  }
 
  .header-subtitle {
-   font-size: 14sp;
+   font-size: 14px;
    font-family: 'vodafone';
    color: #4a4a4a;
-   line-height: 18sp;
+   line-height: 18px;
  }

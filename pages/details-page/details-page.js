@@ -27,7 +27,11 @@ Page({
       });
     }
   },
-
+  termsAndCondition() {
+    my.navigateTo({
+      url: '../how-it-works-page/how-it-works-page',
+    });
+  },
   subumit(data) {
     let loggedInUsers = app.loggedUser;
     if (!loggedInUsers.msidn) {

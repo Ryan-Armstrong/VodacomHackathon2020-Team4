@@ -12,7 +12,7 @@ you recharge.
     </text>
   </view>
   <view class="center-content" style="margin-top:5%;">
-    <text class="howitworks-title" style="font-weight:bold;">Use this service if:</text>
+    <text class="howitworks-title" style="font-weight:bold;font-family:'vodafone-bold'">Use this service if:</text>
   </view>
   <view class="table-content">
     <view class="table-cell">
@@ -23,7 +23,7 @@ you recharge.
         <text class="howitworks-title">Youv’e been active on the Vodacom network for the last 3 months</text>
       </view>
     </view>
-    <view class="center-content" style="margin-top:5%;"><text class="howitworks-title">OR</text></view>
+    <view class="center-content" ><text class="howitworks-title">OR</text></view>
     <view class="table-cell">
       <view class="table-label">
         <view class="dot" style="width:8px;height:8px;border-radius:8px;margin-top:5px;"/>

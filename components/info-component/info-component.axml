@@ -1,7 +1,7 @@
 <view class="vertical-content">
     <top-header title="{{title}}" image="{{image}}" />
-    <view a:for="{{messages}}">
-        <view class="center-content" style="margin-left:10%;margin-right:10%;margin-top:5%;">
+    <view a:for="{{messages}}" style="margin-top:2%;">
+        <view class="center-content" style="margin-left:10%;margin-right:10%;margin-top:10px;">
             <text class="messages-text" >{{item}}</text>
         </view>
     </view>

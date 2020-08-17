@@ -4,13 +4,13 @@
     <view class="center-content" style="text-align:center;">
       <text class="message-text">We've received your request for an airtime advance. You'll receive an SMS once your airtime is available for use.</text>
     </view>
-    <view style="margin-top:5%;text-algin:center">
+    <view style="margin-top:5%;text-align:center">
       <text class="message-text" style="font-weight:bold;">Please note:</text>
       <text>{{" "}}</text>
-      <text class="message-text">You have 30 daysto pay the advancee.</text>
+      <text class="message-text">You have 30 days to pay the advancee.</text>
     </view>
   </view>
   <view class="center-content" style="{{'margin-top:30%;'}}">
-    <custom-button text="Okay" onClickMe="onOkay" ></custom-button>
+    <custom-button text="Okay" onClickMe="onOkay"></custom-button>
   </view>
 </view>

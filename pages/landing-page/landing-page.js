@@ -32,6 +32,7 @@ Page({
       text: 'Micro-Invest',
       icon: "../../assets/images/invest.png"
     }],
+    balance:0.0,
     modalOpened: true,
     phoneNumber: ""
   },
@@ -52,7 +53,9 @@ Page({
     my.showLoading();
 
     app.loggedUser = this.login(this.data.phoneNumber);
-    
+    this.setData({
+      balance:app.loggedUser.balance
+    })
     my.hideLoading();
 
     if (!app.loggedUser.active && !app.loggedUser.forbidden) {
@@ -71,42 +74,6 @@ Page({
         url: '../recharge-page/recharge-page',
       });
     }
-
-
-
-    // my.request({
-    //   url: `${app.connectionURL}/login`,
-    //   headers: {},
-    //   method: 'GET',
-    //   data: { phoneNumber: this.data.phoneNumber },
-    //   timeout: 30000,
-    //   dataType: 'json',
-    //   success: (result) => {
-    //     app.loggedUser = result.data;
-    //     if (!app.loggedUser.active && !app.loggedUser.forbidden) {
-    //       app.errorType = "eligibility";
-    //       my.navigateTo({
-    //         url: '../error-page/error-page',
-    //       });
-    //     } else if (app.loggedUser.forbidden) {
-    //       app.errorType = "nopayment";
-    //       my.navigateTo({
-    //         url: '../error-page/error-page',
-    //       });
-    //     }
-    //     else if (app.loggedUser.amountAdvance < 5 || app.loggedUser.amountQualify === 0) {
-    //       my.navigateTo({
-    //         url: '../recharge-page/recharge-page',
-    //       });
-    //     }
-    //   },
-    //   fail: () => {
-
-    //   },
-    //   complete: () => {
-    //     my.hideLoading();
-    //   }
-    // });
   },
 
   login(phoneNumber) {
@@ -136,8 +103,14 @@ Page({
     let index = ev.detail.index;
     let item = this.data.services[index];
     if (item.text === "Airtime Advance") {
-
-      if (app.loggedUser.amountQualify == 0) {
+      console.log(app.loggedUser.balance);
+      if(!app.loggedUser.msidn){
+        app.errorType = "processing";
+         my.navigateTo({
+          url: '../error-page/error-page',
+        });
+      }
+      else if (app.loggedUser.amountQualify == 0) {
         my.navigateTo({
           url: '../recharge-page/recharge-page',
         });
@@ -158,6 +131,9 @@ Page({
   },
   onShow() {
     // Page display
+    this.setData({
+      balance:app.loggedUser.balance
+    })
   },
   onHide() {
     // Page hidden

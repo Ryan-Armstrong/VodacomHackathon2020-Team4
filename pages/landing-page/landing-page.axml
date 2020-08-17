@@ -7,7 +7,7 @@
           <view class="currency">
             <text class="currency-label">R</text>
           </view>
-          <text class="price-label">261.50</text>
+          <text class="price-label">{{balance}}</text>
           <image mode="scaleToFill" class="expand-icon" src="{{'../../assets/images/expand-arrow.png'}}" background-size="cover"></image>
         </view>
         <view class="top-up-view" onTap="onLogin">

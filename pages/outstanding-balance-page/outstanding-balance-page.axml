@@ -16,12 +16,12 @@
       <text class="table-cell-value" style="font-size:28sp;color:#4a4a4a;">R{{advances}}</text>
     </view>
     <view class="table-cell">
-      <text class="table-cell-label" style="color:#999999;">Payable the next time you recharge</text>
+      <text class="table-cell-label" style="color:#999999;font-size:14px;">Payable the next time you recharge</text>
     </view>
   </view>
   <view class="outstanding-detail">
-    <text class="table-footer" style="color:#4a4a4a;">Advance amount left:</text>
-    <text class="table-footer" style="font-weight:bold;color:#4a4a4a;">R{{amountAdvance}}</text>
+    <text class="table-footer" style="color:#4a4a4a;font-size:18px;line-height: 26px;">Advance amount left:</text>
+    <text class="table-footer" style="font-weight:bold;color:#4a4a4a;font-size:18px;line-height: 26px;">R{{amountAdvance}}</text>
   </view>
   <view class="outstanding-footer">
     <text class="outstanding-footer-text" style="font-weight:bold;">Please note:</text>

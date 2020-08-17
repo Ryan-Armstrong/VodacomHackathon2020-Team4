@@ -5,7 +5,8 @@
 }
 
 .outstanding-subtitle {
-  font-size: 20sp;
+  font-size: 20px;
+  font-family: 'vodafone';
   color: #4a4a4a;
 }
 
@@ -21,8 +22,9 @@
 }
 
 .outstanding-footer-text {
-  font-size: 14sp;
-  line-height: 16sp;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: 'vodafone';
   color: #999999;
   text-align: center;
 }

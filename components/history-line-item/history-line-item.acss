@@ -17,13 +17,15 @@
 }
 
 .history-left-text {
-  font-size: 18sp;
+  font-size: 18px;
   color: #4a4a4a;
+  font-family: 'vodafone';
 }
 
 .history-detail-text {
-  font-size: 14sp;
+  font-size: 14px;
   color: #666666;
+  font-family: 'vodafone';
 }
 
 .add-icon {

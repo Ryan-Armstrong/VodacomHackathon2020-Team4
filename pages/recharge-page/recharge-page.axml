@@ -1,6 +1,6 @@
 <view class="page">
   <info-component image="info-outline.png" title="Please recharge" isColumn="{{true}}" messages="{{messages}}" />
-  <view class="center-content" style="{{isColumn?'flex-direction:column;margin-top:20%;':'margin-top:20%;'}}">
+  <view class="center-content" style="{{isColumn?'flex-direction:column;margin-top:30%;':'margin-top:30%;'}}">
     <view class="center-content" style="{{isColumn?'margin-top:10px;':'margin-left:5px;margin-right:5px;'}}">
       <custom-button text="Recharge" onClickMe="onRecharge" style="{{isColumn?'':'width:158px;'}}"></custom-button>
     </view>
