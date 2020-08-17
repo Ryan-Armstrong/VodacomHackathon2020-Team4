@@ -1,12 +1,12 @@
 <view class="page">
-  <header   titleLabel = 'Advance amount left:' subtitleLabel = "You qualify for:"  titleValue = "R{{user.amountAdvance}}" subtitleValue="R{{user.amountQualify}}"/>
+  <header  titleLabel = 'Advance amount left:' subtitleLabel = "You qualify for:"  titleValue = "R{{user.amountAdvance}}" subtitleValue="R{{user.amountQualify}}"/>
   <view class="tab-comp">
     <tabs tabs="{{tabs}}" activeCls="{{activeTab ===0 ?'airtimeTab':'dataTab'}}" tabBarUnderlineColor={"#ffffff"} showPlus="{{false}}" onTabClick="handleTabClick" onChange="handleTabChange" onPlusClick="handlePlusClick" activeTab="{{activeTab}}">
       <block a:for="{{tabs}}">
         <tab-content key="{{index}}">
           <view class="list">
             <list >
-              <view slot="header">
+              <view slot="header" style="font-family: 'vodafone';">
       {{options[item.key].title}}
                 <image mode="scaleToFill" class="line-item-icon" src="{{`../../assets/images/info.png`}}" background-size="cover"></image>
               </view>

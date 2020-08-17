@@ -1,29 +1,38 @@
-.header-view {
-  display: flex;
-  flex-direction: column;
-  background: #f1f1f1;
-}
-.view-comp{
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-}
-.header-view-comp{
-  margin: 4px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.header-title{
-  font-size: 14sp;
-  font-family: vodafone-bold;
-  font-weight: bold;
-  color: #4a4a4a;
-  line-height: 18sp;
-}
-.header-subtitle{
-font-size: 14sp;
-  font-family: vodafone;
-  color: #4a4a4a;
-  line-height: 18sp;
-}
+ @font-face {
+   font-family: vodafone-bold;
+   src: url('../../assets/fonts/Vodafone-Bold.woff2') format('woff2'), ;
+ }
+
+ .header-view {
+   display: flex;
+   flex-direction: column;
+   background: #f1f1f1;
+ }
+
+ .view-comp {
+   display: flex;
+   flex-direction: column;
+   margin: 10px;
+ }
+
+ .header-view-comp {
+   margin: 4px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
+
+ .header-title {
+   font-size: 14sp;
+   font-weight: bold;
+   font-family: 'vodafone-bold';
+   color: #4a4a4a;
+   line-height: 18sp;
+ }
+
+ .header-subtitle {
+   font-size: 14sp;
+   font-family: 'vodafone';
+   color: #4a4a4a;
+   line-height: 18sp;
+ }

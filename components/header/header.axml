@@ -1,13 +1,12 @@
 <view class="header-view">
   <view class="view-comp">
-     <view class="header-view-comp">
-    <text class="header-title">{{titleLabel}}</text>
-    <text class="header-title">{{titleValue}}</text>
+    <view class="header-view-comp">
+      <text class="header-title">{{titleLabel}}</text>
+      <text class="header-title">{{titleValue}}</text>
+    </view>
+    <view class="header-view-comp">
+      <text class="header-subtitle">{{subtitleLabel}}</text>
+      <text class="header-subtitle">{{subtitleValue}}</text>
+    </view>
   </view>
-  <view class="header-view-comp">
-    <text class="header-subtitle">{{subtitleLabel}}</text>
-    <text class="header-subtitle">{{subtitleValue}}</text>
-  </view>
-  </view>
- 
 </view>

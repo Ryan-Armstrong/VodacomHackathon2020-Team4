@@ -21,6 +21,7 @@
   text-align: center;
   align-items: center;
   color: #ffffff;
+  font-family: 'vodafone';
   background: #e60000;
   border-radius: 8px 0px 0px 8px;
 }
@@ -35,6 +36,7 @@
   text-align: center;
   align-items: center;
   color: #ffffff;
+  font-family: 'vodafone';
   background: #e60000;
   border-radius: 0px 8px 8px 0px;
 }
@@ -52,7 +54,8 @@
   display: flex;
   width:100%;
   color: #4a4a4a;
-  font-size: 11pt;
+  font-family: 'vodafone';
+  font-size: 18sp;
 }
 .line{
   justify-content: center;

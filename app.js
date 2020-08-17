@@ -6,6 +6,7 @@ App({
   errorType:"",
   isProd:true,
   connectionURL:"",
+  
   onLaunch(options) {
     const app = getApp();
     // Page opens for the first time

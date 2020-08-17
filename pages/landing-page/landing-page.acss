@@ -122,11 +122,11 @@
   color: grey;
 }
 
-.header-title {
+/* .header-title {
   color: grey;
   font-size: 18pt;
   font-weight: 900;
-}
+} */
 
 .header {
   padding: 30rpx;

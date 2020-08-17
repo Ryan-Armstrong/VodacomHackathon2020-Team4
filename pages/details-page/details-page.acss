@@ -16,6 +16,8 @@
 .title {
   color: #333333;
   font-size: 20sp;
+  font-family: 'vodafone';
+
 }
 
 /* .content-view {
@@ -100,6 +102,7 @@
 .terms{
   color:#4a4a4a;
   font-size:  18sp;
+  font-family: 'vodafone';
 }
 .terms-link{
   color:#e60000;

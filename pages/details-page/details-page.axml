@@ -14,7 +14,7 @@
       <text class="table-cell-value" style="font-weight:normal;">R{{option.fee}}</text>
     </view>
     <view class="table-cell">
-      <text class="table-cell-label" style="font-weight:bold;">{{"Total repyment"}}</text>
+      <text class="table-cell-label" style="font-weight:bold;font-family: 'vodafone-bold';">{{"Total repyment"}}</text>
       <text class="table-cell-value" style="font-weight:bold;">R{{totalRepayment}}</text>
     </view>
     <text class="table-footer">Payable the next time you recharge</text>
